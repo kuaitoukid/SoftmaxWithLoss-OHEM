@@ -1,0 +1,9 @@
+optional SoftmaxWithLossParameter softmax_with_loss_param = xxxx; // replace xxxx with proper ID
+
+message SoftmaxWithLossParameter {
+  optional bool use_hard_mining = 1 [default = false];
+  optional int32 batch_size = 2 [default = 1];
+  optional float hard_ratio = 3 [default = 1];
+}
+
+
